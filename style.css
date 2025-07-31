@@ -1,0 +1,41 @@
+
+body {
+  margin: 0;
+  background-color: #f0ffe5;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.typing-text {
+  font-size: 2em;
+  color: #2e7d32;
+  border-right: 3px solid #2e7d32;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(30) forwards;
+}
+
+.frog {
+  width: 100px;
+  margin-bottom: 20px;
+  animation: jump 2s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes jump {
+  0%, 100% { transform: translateY(0) }
+  50% { transform: translateY(-20px) }
+}
